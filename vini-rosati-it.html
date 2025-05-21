@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vini Rosati</title>
+  <style>
+    /* Stile coerente con le altre pagine */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.imgur.com/Z8qq1aA.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+    h1 { font-size: 1.8em; margin-bottom: 15px; color: #f0c040; }
+    .product-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px; }
+    .product-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 12px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.01);
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+    .product-name { font-size: 1.1em; margin-bottom: 4px; color: #fff; }
+    .product-description { font-size: 0.85em; margin-bottom: 6px; color: #ddd; }
+    .product-price { font-size: 1em; font-weight: bold; color: #f0c040; }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #1E3A8A;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover { background-color: #4F6FF5; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌸 Vini Rosati</h1>
+    <div class="product-list">
+      <div class="product-card"><h2 class="product-name">Cerasuolo d'Abruzzo</h2><p class="product-description">Rosato intenso e fruttato.</p><span class="product-price">€4.50</span></div>
+      <div class="product-card"><h2 class="product-name">Chiaretto del Garda</h2><p class="product-description">Fresco e floreale.</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Bardolino Chiaretto</h2><p class="product-description">Delicato e leggero.</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Negroamaro Rosato</h2><p class="product-description">Pugliese, intenso ma fresco.</p><span class="product-price">€4.50</span></div>
+      <div class="product-card"><h2 class="product-name">Rosato di Syrah</h2><p class="product-description">Aromatico e speziato.</p><span class="product-price">€5.00</span></div>
+      <div class="product-card"><h2 class="product-name">Rosato Salentino</h2><p class="product-description">Fruttato e morbido.</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Etna Rosato</h2><p class="product-description">Minerale e floreale.</p><span class="product-price">€5.50</span></div>
+      <div class="product-card"><h2 class="product-name">Aglianico Rosato</h2><p class="product-description">Corposo ma fresco.</p><span class="product-price">€4.50</span></div>
+      <div class="product-card"><h2 class="product-name">Lagrein Rosato</h2><p class="product-description">Alto Adige, vivace.</p><span class="product-price">€4.50</span></div>
+      <div class="product-card"><h2 class="product-name">Rosé Frizzante</h2><p class="product-description">Leggero e vivace.</p><span class="product-price">€3.50</span></div>
+    </div>
+    <a href="vini-it.html" class="btn">← Torna alla selezione vini</a>
+  </div>
+</body>
+</html>

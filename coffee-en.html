@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coffee & Pastries</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.imgur.com/Z8qq1aA.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #f0c040;
+    }
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .product-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 12px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.01);
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+    .product-name {
+      font-size: 1.1em;
+      margin-bottom: 4px;
+      color: #ffffff;
+    }
+    .product-description {
+      font-size: 0.85em;
+      margin-bottom: 6px;
+      color: #dddddd;
+    }
+    .product-price {
+      font-size: 1em;
+      font-weight: bold;
+      color: #f0c040;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #1E3A8A;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #4F6FF5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>☕ Coffee & Pastries</h1>
+    <div class="product-list">
+      <div class="product-card"><h2 class="product-name">Espresso</h2><p class="product-description">Strong Italian coffee shot.</p><span class="product-price">€1.00</span></div>
+      <div class="product-card"><h2 class="product-name">Cappuccino</h2><p class="product-description">Espresso with steamed milk foam.</p><span class="product-price">€1.50</span></div>
+      <div class="product-card"><h2 class="product-name">Macchiato</h2><p class="product-description">Espresso with a drop of milk.</p><span class="product-price">€1.20</span></div>
+      <div class="product-card"><h2 class="product-name">Americano</h2><p class="product-description">Diluted espresso with hot water.</p><span class="product-price">€1.50</span></div>
+      <div class="product-card"><h2 class="product-name">Latte Macchiato</h2><p class="product-description">Milk with a shot of espresso.</p><span class="product-price">€1.80</span></div>
+      <div class="product-card"><h2 class="product-name">Ginseng Coffee</h2><p class="product-description">Flavored coffee with ginseng.</p><span class="product-price">€1.50</span></div>
+      <div class="product-card"><h2 class="product-name">Barley Coffee</h2><p class="product-description">Caffeine-free roasted barley.</p><span class="product-price">€1.20</span></div>
+      <div class="product-card"><h2 class="product-name">Espresso Corretto</h2><p class="product-description">Espresso with a splash of liquor.</p><span class="product-price">€1.80</span></div>
+      <div class="product-card"><h2 class="product-name">Iced Coffee</h2><p class="product-description">Espresso served cold and shaken.</p><span class="product-price">€1.50</span></div>
+      <div class="product-card"><h2 class="product-name">Hot Tea</h2><p class="product-description">Black or green tea.</p><span class="product-price">€1.50</span></div>
+      <div class="product-card"><h2 class="product-name">Hot Chocolate</h2><p class="product-description">Thick and rich cocoa drink.</p><span class="product-price">€2.00</span></div>
+      <div class="product-card"><h2 class="product-name">Hot Milk</h2><p class="product-description">Plain warm milk.</p><span class="product-price">€1.00</span></div>
+      <div class="product-card"><h2 class="product-name">Orange Juice</h2><p class="product-description">Freshly squeezed.</p><span class="product-price">€3.00</span></div>
+      <div class="product-card"><h2 class="product-name">Plain Croissant</h2><p class="product-description">Traditional Italian-style croissant.</p><span class="product-price">€1.20</span></div>
+      <div class="product-card"><h2 class="product-name">Cream Croissant</h2><p class="product-description">Filled with pastry cream.</p><span class="product-price">€1.50</span></div>
+      <div class="product-card"><h2 class="product-name">Chocolate Croissant</h2><p class="product-description">Filled with chocolate cream.</p><span class="product-price">€1.50</span></div>
+      <div class="product-card"><h2 class="product-name">Jam Croissant</h2><p class="product-description">Filled with apricot jam.</p><span class="product-price">€1.50</span></div>
+      <div class="product-card"><h2 class="product-name">Wholemeal Croissant</h2><p class="product-description">With honey or plain.</p><span class="product-price">€1.50</span></div>
+      <div class="product-card"><h2 class="product-name">Yogurt</h2><p class="product-description">Natural or fruit-flavored.</p><span class="product-price">€2.00</span></div>
+      <div class="product-card"><h2 class="product-name">Fruit Juice</h2><p class="product-description">Peach, pear, apricot...</p><span class="product-price">€2.00</span></div>
+    </div>
+    <a href="menu-en.html" class="btn">← Back to categories</a>
+  </div>
+</body>
+</html>

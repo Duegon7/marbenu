@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Red Wines</title>
+  <style>
+    /* Stile coerente */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.imgur.com/Z8qq1aA.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+    h1 { font-size: 1.8em; margin-bottom: 15px; color: #f0c040; }
+    .product-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px; }
+    .product-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 12px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .product-card:hover { transform: scale(1.01); background-color: rgba(255,255,255,0.15); }
+    .product-name { font-size: 1.1em; color: #fff; }
+    .product-description { font-size: 0.85em; color: #ddd; }
+    .product-price { color: #f0c040; font-weight: bold; }
+    .btn {
+      padding: 10px 20px;
+      background: #1E3A8A;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+    .btn:hover { background: #4F6FF5; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🥂 Prosecco & Sparkling</h1>
+<div class="product-list">
+  <div class="product-card"><h2 class="product-name">Prosecco DOC</h2><p class="product-description">Dry and fruity sparkling wine.</p><span class="product-price">€4.50</span></div>
+  <div class="product-card"><h2 class="product-name">Extra Dry Prosecco</h2><p class="product-description">Smooth and aromatic.</p><span class="product-price">€5.00</span></div>
+  <div class="product-card"><h2 class="product-name">Rosé Prosecco</h2><p class="product-description">Elegant pink bubbles.</p><span class="product-price">€5.00</span></div>
+  <div class="product-card"><h2 class="product-name">Sweet Spumante</h2><p class="product-description">Perfect with dessert.</p><span class="product-price">€4.50</span></div>
+  <div class="product-card"><h2 class="product-name">Franciacorta DOCG</h2><p class="product-description">Classic method from Italy.</p><span class="product-price">€7.00</span></div>
+</div>
+<a href="wines-en.html" class="btn">← Back to Wines</a>
+</body>
+</html>

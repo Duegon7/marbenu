@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cocktails</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.imgur.com/Z8qq1aA.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #f0c040;
+    }
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .product-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 12px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.01);
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+    .product-name {
+      font-size: 1.1em;
+      margin-bottom: 4px;
+      color: #ffffff;
+    }
+    .product-description {
+      font-size: 0.85em;
+      margin-bottom: 6px;
+      color: #dddddd;
+    }
+    .product-price {
+      font-size: 1em;
+      font-weight: bold;
+      color: #f0c040;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #1E3A8A;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #4F6FF5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🍸 Cocktails</h1>
+    <div class="product-list">
+      <div class="product-card"><h2 class="product-name">Spritz</h2><p class="product-description">Aperol, prosecco, soda water.</p><span class="product-price">€5.00</span></div>
+      <div class="product-card"><h2 class="product-name">Negroni</h2><p class="product-description">Gin, vermouth, Campari.</p><span class="product-price">€6.00</span></div>
+      <div class="product-card"><h2 class="product-name">Americano</h2><p class="product-description">Vermouth, Campari, soda.</p><span class="product-price">€5.50</span></div>
+      <div class="product-card"><h2 class="product-name">Mojito</h2><p class="product-description">Rum, lime, mint, sugar, soda.</p><span class="product-price">€6.50</span></div>
+      <div class="product-card"><h2 class="product-name">Gin & Tonic</h2><p class="product-description">Gin with tonic water and ice.</p><span class="product-price">€6.00</span></div>
+      <div class="product-card"><h2 class="product-name">Vodka Lemon</h2><p class="product-description">Vodka and lemon soda.</p><span class="product-price">€6.00</span></div>
+      <div class="product-card"><h2 class="product-name">Vodka Red Bull</h2><p class="product-description">Energy drink and vodka.</p><span class="product-price">€6.50</span></div>
+      <div class="product-card"><h2 class="product-name">Rum & Cola</h2><p class="product-description">Dark rum with Coca-Cola.</p><span class="product-price">€6.00</span></div>
+      <div class="product-card"><h2 class="product-name">Cuba Libre</h2><p class="product-description">Rum, lime juice, cola.</p><span class="product-price">€6.00</span></div>
+      <div class="product-card"><h2 class="product-name">Martini Bianco</h2><p class="product-description">Sweet white vermouth.</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Martini Rosso</h2><p class="product-description">Aromatic red vermouth.</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Campari Soda</h2><p class="product-description">Bitter liqueur with soda.</p><span class="product-price">€4.50</span></div>
+      <div class="product-card"><h2 class="product-name">Campari Orange</h2><p class="product-description">Campari with orange juice.</p><span class="product-price">€5.00</span></div>
+      <div class="product-card"><h2 class="product-name">Virgin Mojito</h2><p class="product-description">Mint, lime, soda (no alcohol).</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Whiskey Neat</h2><p class="product-description">Served straight up.</p><span class="product-price">€5.00</span></div>
+      <div class="product-card"><h2 class="product-name">Whiskey & Cola</h2><p class="product-description">Whiskey with Coca-Cola.</p><span class="product-price">€6.00</span></div>
+      <div class="product-card"><h2 class="product-name">Gin Lemon</h2><p class="product-description">Gin and lemon soda.</p><span class="product-price">€6.00</span></div>
+      <div class="product-card"><h2 class="product-name">Tequila Sunrise</h2><p class="product-description">Tequila, orange juice, grenadine.</p><span class="product-price">€6.50</span></div>
+      <div class="product-card"><h2 class="product-name">Sex on the Beach</h2><p class="product-description">Vodka, peach liqueur, juices.</p><span class="product-price">€6.50</span></div>
+      <div class="product-card"><h2 class="product-name">Caipiroska</h2><p class="product-description">Vodka, lime, sugar, crushed ice.</p><span class="product-price">€6.50</span></div>
+    </div>
+    <a href="menu-en.html" class="btn">← Back to categories</a>
+  </div>
+</body>
+</html>

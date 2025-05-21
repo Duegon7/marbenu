@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Analcolici</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.imgur.com/Z8qq1aA.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #f0c040;
+    }
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .product-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 12px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.01);
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+    .product-name {
+      font-size: 1.1em;
+      margin-bottom: 4px;
+      color: #ffffff;
+    }
+    .product-description {
+      font-size: 0.85em;
+      margin-bottom: 6px;
+      color: #dddddd;
+    }
+    .product-price {
+      font-size: 1em;
+      font-weight: bold;
+      color: #f0c040;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #1E3A8A;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #4F6FF5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚫 Analcolici</h1>
+    <div class="product-list">
+      <div class="product-card"><h2 class="product-name">Spremuta d'Arancia</h2><p class="product-description">Fresca e vitaminica.</p><span class="product-price">€3.00</span></div>
+      <div class="product-card"><h2 class="product-name">Succo di Mela</h2><p class="product-description">Dolce e naturale.</p><span class="product-price">€2.50</span></div>
+      <div class="product-card"><h2 class="product-name">Succo ACE</h2><p class="product-description">Arancia, carota e limone.</p><span class="product-price">€2.50</span></div>
+      <div class="product-card"><h2 class="product-name">Succo Pera</h2><p class="product-description">Fruttato e vellutato.</p><span class="product-price">€2.50</span></div>
+      <div class="product-card"><h2 class="product-name">Tè Freddo Limone</h2><p class="product-description">Dissetante e agrumato.</p><span class="product-price">€2.00</span></div>
+      <div class="product-card"><h2 class="product-name">Tè Freddo Pesca</h2><p class="product-description">Dolce e morbido.</p><span class="product-price">€2.00</span></div>
+      <div class="product-card"><h2 class="product-name">Latte Bianco</h2><p class="product-description">Fresco e nutriente.</p><span class="product-price">€1.50</span></div>
+      <div class="product-card"><h2 class="product-name">Latte e Miele</h2><p class="product-description">Dolce tradizione italiana.</p><span class="product-price">€2.00</span></div>
+      <div class="product-card"><h2 class="product-name">Yogurt da Bere</h2><p class="product-description">Alla frutta o naturale.</p><span class="product-price">€2.50</span></div>
+      <div class="product-card"><h2 class="product-name">Crodino</h2><p class="product-description">Bitter analcolico da aperitivo.</p><span class="product-price">€2.50</span></div>
+      <div class="product-card"><h2 class="product-name">Sanbittèr</h2><p class="product-description">Rosso, frizzante e analcolico.</p><span class="product-price">€2.50</span></div>
+      <div class="product-card"><h2 class="product-name">Ginger Ale</h2><p class="product-description">Frizzante e speziato.</p><span class="product-price">€2.00</span></div>
+      <div class="product-card"><h2 class="product-name">Ginger Rosso</h2><p class="product-description">Amaro e rinfrescante.</p><span class="product-price">€2.00</span></div>
+      <div class="product-card"><h2 class="product-name">Cocktail Analcolico Tropicale</h2><p class="product-description">Frutta esotica e ghiaccio.</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Cocktail Analcolico Frutti Rossi</h2><p class="product-description">Mix fruttato fresco.</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Milkshake Vaniglia</h2><p class="product-description">Con panna montata.</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Milkshake Cioccolato</h2><p class="product-description">Cremoso e intenso.</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Acqua Naturale</h2><p class="product-description">Bottiglia o bicchiere.</p><span class="product-price">€1.00</span></div>
+      <div class="product-card"><h2 class="product-name">Acqua Frizzante</h2><p class="product-description">Gassata e fresca.</p><span class="product-price">€1.00</span></div>
+      <div class="product-card"><h2 class="product-name">Soda</h2><p class="product-description">Perfetta anche per mix.</p><span class="product-price">€1.50</span></div>
+    </div>
+    <a href="menu-it.html" class="btn">← Torna alle categorie</a>
+  </div>
+</body>
+</html>
