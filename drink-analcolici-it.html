@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drink Analcolici</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.imgur.com/Z8qq1aA.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+    h1 { font-size: 1.8em; margin-bottom: 15px; color: #f0c040; }
+    .product-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px; }
+    .product-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 12px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .product-card:hover { transform: scale(1.01); background-color: rgba(255,255,255,0.15); }
+    .product-name { font-size: 1.1em; color: #fff; }
+    .product-description { font-size: 0.85em; color: #ddd; }
+    .product-price { color: #f0c040; font-weight: bold; }
+    .btn {
+      padding: 10px 20px;
+      background: #1E3A8A;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+    .btn:hover { background: #4F6FF5; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🥤 Drink Analcolici</h1>
+    <div class="product-list">
+      <div class="product-card"><h2 class="product-name">Virgin Mojito</h2><p class="product-description">Menta, Lime, Zucchero, Soda</p><span class="product-price">€4.50</span></div>
+      <div class="product-card"><h2 class="product-name">Cocktail alla Frutta</h2><p class="product-description">Succo misto, frutta fresca</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Analcolico Rosso</h2><p class="product-description">Mix di bitter e agrumi</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Analcolico Tropicale</h2><p class="product-description">Succo tropicale e ananas</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Analcolico alla Menta</h2><p class="product-description">Menta e limone con soda</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Cocktail ACE</h2><p class="product-description">Succo di arancia, carota e limone</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Spritz Analcolico</h2><p class="product-description">Crodino, soda, arancia</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Cocktail al Lampone</h2><p class="product-description">Sciroppo e soda</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Caffè Shakerato Analcolico</h2><p class="product-description">Espresso, ghiaccio, zucchero</p><span class="product-price">€4.00</span></div>
+      <div class="product-card"><h2 class="product-name">Acqua Tonica e Lime</h2><p class="product-description">Tonica e succo di lime</p><span class="product-price">€3.50</span></div>
+    </div>
+    <a href="drink-it.html" class="btn">← Torna a Drink</a>
+  </div>
+</body>
+</html>
