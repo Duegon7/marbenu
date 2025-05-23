@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caffè</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.imgur.com/Z8qq1aA.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #f0c040;
+    }
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .product-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 12px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.01);
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+    .product-name {
+      font-size: 1.1em;
+      margin-bottom: 4px;
+      color: #ffffff;
+    }
+    .product-description {
+      font-size: 0.85em;
+      margin-bottom: 6px;
+      color: #dddddd;
+    }
+    .product-price {
+      font-size: 1em;
+      font-weight: bold;
+      color: #f0c040;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #1E3A8A;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #4F6FF5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>☕ Caffè</h1>
+    <div class="product-list">
+      <div class="product-card"><h2 class="product-name">Espresso</h2><p class="product-description">Classico italiano, corto e intenso.</p><span class="product-price">€1.20</span></div>
+      <div class="product-card"><h2 class="product-name">Caffè Doppio</h2><p class="product-description">Due espressi in una tazza.</p><span class="product-price">€2.00</span></div>
+      <div class="product-card"><h2 class="product-name">Caffè Macchiato</h2><p class="product-description">Espresso con una goccia di latte.</p><span class="product-price">€1.30</span></div>
+      <div class="product-card"><h2 class="product-name">Caffè Decaffeinato</h2><p class="product-description">Espresso senza caffeina.</p><span class="product-price">€1.20</span></div>
+      <div class="product-card"><h2 class="product-name">Caffè al Ginseng</h2><p class="product-description">Dolce e cremoso, al gusto ginseng.</p><span class="product-price">€1.50</span></div>
+      <div class="product-card"><h2 class="product-name">Caffè d'Orzo</h2><p class="product-description">Alternativa naturale e senza caffeina.</p><span class="product-price">€1.30</span></div>
+      <div class="product-card"><h2 class="product-name">Caffè Corretto</h2><p class="product-description">Con un goccio di liquore a scelta.</p><span class="product-price">€1.70</span></div>
+      <div class="product-card"><h2 class="product-name">Caffè Freddo</h2><p class="product-description">Espresso servito freddo.</p><span class="product-price">€1.30</span></div>
+      <div class="product-card"><h2 class="product-name">Caffè Shakerato</h2><p class="product-description">Espresso freddo e zuccherato, shakerato con ghiaccio.</p><span class="product-price">€2.00</span></div>
+      <div class="product-card"><h2 class="product-name">Caffè con Panna</h2><p class="product-description">Espresso con panna montata.</p><span class="product-price">€1.80</span></div>
+    </div>
+    <a href="caffetteria-it.html" class="btn">← Torna alla Caffetteria</a>
+  </div>
+</body>
+</html>
