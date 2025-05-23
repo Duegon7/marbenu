@@ -24,86 +24,42 @@
       max-width: 500px;
       width: 100%;
       text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-      overflow-y: auto;
-      max-height: 90vh;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
     }
     h1 {
       font-size: 1.8em;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       color: #f0c040;
     }
-    .product-list {
+    .btn-group {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      margin-bottom: 15px;
-    }
-    .product-card {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 12px;
-      border-radius: 10px;
-      transition: transform 0.3s ease, background-color 0.3s ease;
-    }
-    .product-card:hover {
-      transform: scale(1.01);
-      background-color: rgba(255, 255, 255, 0.15);
-    }
-    .product-name {
-      font-size: 1.1em;
-      margin-bottom: 4px;
-      color: #ffffff;
-    }
-    .product-description {
-      font-size: 0.85em;
-      margin-bottom: 6px;
-      color: #dddddd;
-    }
-    .product-price {
-      font-size: 1em;
-      font-weight: bold;
-      color: #f0c040;
+      gap: 15px;
     }
     .btn {
-      display: inline-block;
-      padding: 10px 20px;
       background-color: #1E3A8A;
-      color: #fff;
+      color: white;
+      padding: 14px;
+      border-radius: 30px;
       text-decoration: none;
-      border-radius: 25px;
-      transition: background-color 0.3s ease;
+      font-size: 1.1em;
+      transition: 0.3s;
     }
     .btn:hover {
       background-color: #4F6FF5;
+      transform: translateY(-2px);
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>🥤 Soft Drinks</h1>
-    <div class="product-list">
-      <div class="product-card"><h2 class="product-name">Coca-Cola</h2><p class="product-description">Classic fizzy cola.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Fanta</h2><p class="product-description">Orange flavored soda.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Sprite</h2><p class="product-description">Lemon-lime soda.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Chinotto</h2><p class="product-description">Bittersweet Italian soda.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Pepsi</h2><p class="product-description">Alternative cola drink.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Lemonsoda</h2><p class="product-description">Sparkling lemon drink.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Oransoda</h2><p class="product-description">Sparkling orange soda.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Tonic Water</h2><p class="product-description">Perfect for mixing or alone.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Crodino</h2><p class="product-description">Bitter non-alcoholic aperitif.</p><span class="product-price">€2.50</span></div>
-      <div class="product-card"><h2 class="product-name">Sanbittèr</h2><p class="product-description">Red sparkling aperitif.</p><span class="product-price">€2.50</span></div>
-      <div class="product-card"><h2 class="product-name">Ice Tea Peach</h2><p class="product-description">Chilled peach-flavored tea.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Ice Tea Lemon</h2><p class="product-description">Chilled lemon-flavored tea.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Still Water</h2><p class="product-description">Bottle or glass.</p><span class="product-price">€1.00</span></div>
-      <div class="product-card"><h2 class="product-name">Sparkling Water</h2><p class="product-description">Carbonated mineral water.</p><span class="product-price">€1.00</span></div>
-      <div class="product-card"><h2 class="product-name">Peach Juice</h2><p class="product-description">Thick fruit nectar.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Pear Juice</h2><p class="product-description">Sweet and soft nectar.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Apricot Juice</h2><p class="product-description">Smooth fruity taste.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">ACE Juice</h2><p class="product-description">Orange, carrot, lemon blend.</p><span class="product-price">€2.50</span></div>
-      <div class="product-card"><h2 class="product-name">Ginger Drink</h2><p class="product-description">Red bittersweet soda.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Red Bull</h2><p class="product-description">Energy drink.</p><span class="product-price">€3.00</span></div>
+    <div class="btn-group">
+      <a href="classic-soft-en.html" class="btn">Classic Sodas</a>
+      <a href="aperitifs-en.html" class="btn">Non-Alcoholic Aperitifs</a>
+      <a href="menu-en.html" class="btn" style="background:#ccc; color:#000;">← Back to Menu</a>
     </div>
-    <a href="menu-en.html" class="btn">← Back to categories</a>
   </div>
 </body>
 </html>
+
