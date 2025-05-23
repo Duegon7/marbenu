@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Menu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
       background: url('https://i.imgur.com/Z8qq1aA.jpeg') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
-      min-height: 100vh;
+      color: white;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: start;
-      padding: 30px 20px;
+      height: 100vh;
     }
-    .logo {
-      width: 120px;
-      height: auto;
-      margin-bottom: 15px;
-    }
-    h1 {
-      font-size: 1.8em;
-      margin-bottom: 25px;
-      color: #f0c040;
-    }
-    .menu-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      width: 100%;
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      width: 90%;
       max-width: 400px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     }
+
+    h1 {
+      font-size: 1.6em;
+      margin-bottom: 25px;
+    }
+
     .btn {
-      background-color: #1E3A8A;
+      display: block;
+      background: #1E3A8A;
       color: white;
       padding: 14px;
       border-radius: 30px;
       text-decoration: none;
-      font-size: 1.1em;
-      text-align: center;
+      margin: 10px auto;
+      font-size: 1.2em;
       transition: 0.3s;
     }
+
     .btn:hover {
-      background-color: #4F6FF5;
+      background: #4F6FF5;
       transform: translateY(-2px);
     }
   </style>
 </head>
 <body>
-  <img src="https://i.imgur.com/OLmwjA5.png" alt="Logo" class="logo" />
-  <h1>Welcome to our Menu</h1>
-  <div class="menu-buttons">
-    <a href="caffetteria-en.html" class="btn">Coffee & Pastries</a>
-    <a href="soft-en.html" class="btn">Soft Drinks</a>
-    <a href="drink-en.html" class="btn">Cocktails</a>
-    <a href="birre-en.html" class="btn">Beers</a>
-    <a href="spirits-en.html" class="btn">Spirits</a>
-    <a href="wines-en.html" class="btn">Wines</a>
+  <div class="overlay">
+    <h1>Categories</h1>
+    <a href="caffetteria-en.html" class="btn">☕ Coffee & Pastries</a>
+    <a href="soft-en.html" class="btn">🥤 Soft Drinks</a>
+    <a href="drink-en.html" class="btn">🍸 Cocktails</a>
+    <a href="birre-en.html" class="btn">🍺 Beers</a>
+    <a href="spirits-en.html" class="btn">🥃 Spirits</a>
+    <a href="wines-en.html" class="btn">🍷 Wines</a>
+    <a href="index.html" class="btn" style="background: #ccc; color: #000;">← Back</a>
+    <p style="margin-bottom: 20px; background-color: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.95em; color: #ffcc00;">
+      * Please note: at the bar tables it is only allowed to consume items related to the aperitif. For other types of orders, we kindly invite you to move to the restaurant area.
+    </p>
   </div>
 </body>
 </html>
+
 
