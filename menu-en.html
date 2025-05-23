@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Menu Categories</title>
+  <title>Menu</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -13,62 +13,55 @@
       color: #fff;
       min-height: 100vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      padding: 20px;
+      justify-content: start;
+      padding: 30px 20px;
     }
-    .container {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 25px;
-      border-radius: 15px;
-      max-width: 500px;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 15px;
     }
     h1 {
       font-size: 1.8em;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       color: #f0c040;
     }
-    .btn-group {
+    .menu-buttons {
       display: flex;
       flex-direction: column;
       gap: 15px;
+      width: 100%;
+      max-width: 400px;
     }
     .btn {
-      display: block;
-      background: #1E3A8A;
+      background-color: #1E3A8A;
       color: white;
       padding: 14px;
       border-radius: 30px;
       text-decoration: none;
       font-size: 1.1em;
+      text-align: center;
       transition: 0.3s;
     }
     .btn:hover {
-      background: #4F6FF5;
+      background-color: #4F6FF5;
       transform: translateY(-2px);
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Menu Categories</h1>
-    <div class="btn-group">
-      <a href="coffee-en.html" class="btn">☕ Coffee & Pastries</a>
-      <a href="soft-en.html" class="btn">🥤 Soft Drinks</a>
-      <a href="cocktails-en.html" class="btn">🍸 Cocktails</a>
-      <a href="beers-en.html" class="btn">🍺 Beers</a>
-      <a href="nonalcoholic-en.html" class="btn">🚫 Non-Alcoholic</a>
-      <a href="spirits-en.html" class="btn">:🥃 Spirits</a>
-      <a href="wines-en.html" class="btn">🍷wine</a>
-      <a href="index.html" class="btn" style="background:#ccc; color:#000;">← Back to Home</a>
-      <p style="margin-bottom: 20px; background-color: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.95em; color: #ffcc00;">
-  * Please note that only aperitif-related items may be consumed at the bar tables. For other food, kindly take a seat in the restaurant area.
-</p>
-
-    </div>
+  <img src="https://i.imgur.com/OLmwjA5.png" alt="Logo" class="logo" />
+  <h1>Welcome to our Menu</h1>
+  <div class="menu-buttons">
+    <a href="caffetteria-en.html" class="btn">Coffee & Pastries</a>
+    <a href="soft-en.html" class="btn">Soft Drinks</a>
+    <a href="drink-en.html" class="btn">Cocktails</a>
+    <a href="birre-en.html" class="btn">Beers</a>
+    <a href="spirits-en.html" class="btn">Spirits</a>
+    <a href="wines-en.html" class="btn">Wines</a>
   </div>
 </body>
 </html>
+
