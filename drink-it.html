@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drink</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -24,86 +24,42 @@
       max-width: 500px;
       width: 100%;
       text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-      overflow-y: auto;
-      max-height: 90vh;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
     }
     h1 {
       font-size: 1.8em;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       color: #f0c040;
     }
-    .product-list {
+    .btn-group {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      margin-bottom: 15px;
-    }
-    .product-card {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 12px;
-      border-radius: 10px;
-      transition: transform 0.3s ease, background-color 0.3s ease;
-    }
-    .product-card:hover {
-      transform: scale(1.01);
-      background-color: rgba(255, 255, 255, 0.15);
-    }
-    .product-name {
-      font-size: 1.1em;
-      margin-bottom: 4px;
-      color: #ffffff;
-    }
-    .product-description {
-      font-size: 0.85em;
-      margin-bottom: 6px;
-      color: #dddddd;
-    }
-    .product-price {
-      font-size: 1em;
-      font-weight: bold;
-      color: #f0c040;
+      gap: 15px;
     }
     .btn {
-      display: inline-block;
-      padding: 10px 20px;
       background-color: #1E3A8A;
-      color: #fff;
+      color: white;
+      padding: 14px;
+      border-radius: 30px;
       text-decoration: none;
-      border-radius: 25px;
-      transition: background-color 0.3s ease;
+      font-size: 1.1em;
+      transition: 0.3s;
     }
     .btn:hover {
       background-color: #4F6FF5;
+      transform: translateY(-2px);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🍸 Drink</h1>
-    <div class="product-list">
-      <div class="product-card"><h2 class="product-name">Spritz</h2><p class="product-description">Aperol, prosecco e soda.</p><span class="product-price">€5.00</span></div>
-      <div class="product-card"><h2 class="product-name">Negroni</h2><p class="product-description">Gin, Campari e vermouth rosso.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Americano</h2><p class="product-description">Campari, vermouth rosso e soda.</p><span class="product-price">€5.50</span></div>
-      <div class="product-card"><h2 class="product-name">Mojito</h2><p class="product-description">Rum, lime, menta e zucchero.</p><span class="product-price">€6.50</span></div>
-      <div class="product-card"><h2 class="product-name">Gin Tonic</h2><p class="product-description">Gin con acqua tonica.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Vodka Lemon</h2><p class="product-description">Vodka e lemon soda.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Vodka Red Bull</h2><p class="product-description">Energetico e alcolico.</p><span class="product-price">€6.50</span></div>
-      <div class="product-card"><h2 class="product-name">Rum Cola</h2><p class="product-description">Rum scuro e Coca-Cola.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Cuba Libre</h2><p class="product-description">Rum, cola e lime.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Martini Bianco</h2><p class="product-description">Vermouth dolce con ghiaccio.</p><span class="product-price">€4.00</span></div>
-      <div class="product-card"><h2 class="product-name">Martini Rosso</h2><p class="product-description">Vermouth aromatico.</p><span class="product-price">€4.00</span></div>
-      <div class="product-card"><h2 class="product-name">Campari Soda</h2><p class="product-description">Amaro con soda.</p><span class="product-price">€4.50</span></div>
-      <div class="product-card"><h2 class="product-name">Campari Orange</h2><p class="product-description">Campari con succo d’arancia.</p><span class="product-price">€5.00</span></div>
-      <div class="product-card"><h2 class="product-name">Aperitivo Analcolico</h2><p class="product-description">Mix fruttato senza alcol.</p><span class="product-price">€4.00</span></div>
-      <div class="product-card"><h2 class="product-name">Whiskey Liscio</h2><p class="product-description">Servito puro.</p><span class="product-price">€5.00</span></div>
-      <div class="product-card"><h2 class="product-name">Whiskey e Cola</h2><p class="product-description">Mix classico.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Gin Lemon</h2><p class="product-description">Gin e lemon soda.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Tequila Sunrise</h2><p class="product-description">Tequila, arancia e grenadine.</p><span class="product-price">€6.50</span></div>
-      <div class="product-card"><h2 class="product-name">Sex on the Beach</h2><p class="product-description">Vodka, pesca, arancia e mirtillo.</p><span class="product-price">€6.50</span></div>
-      <div class="product-card"><h2 class="product-name">Caipiroska</h2><p class="product-description">Vodka, lime e zucchero.</p><span class="product-price">€6.50</span></div>
+    <h1>🍹 Seleziona una sottocategoria</h1>
+    <div class="btn-group">
+      <a href="drink-classici-it.html" class="btn">Drink Classici</a>
+      <a href="drink-analcolici-it.html" class="btn">Drink Analcolici</a>
+      <a href="drink-speciali-it.html" class="btn">Drink Speciali</a>
+      <a href="menu-it.html" class="btn" style="background:#ccc; color:#000;">← Torna al Menu</a>
     </div>
-    <a href="menu-it.html" class="btn">← Torna alle categorie</a>
   </div>
 </body>
 </html>
