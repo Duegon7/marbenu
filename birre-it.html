@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Birre</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -24,86 +24,42 @@
       max-width: 500px;
       width: 100%;
       text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-      overflow-y: auto;
-      max-height: 90vh;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
     }
     h1 {
       font-size: 1.8em;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       color: #f0c040;
     }
-    .product-list {
+    .btn-group {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      margin-bottom: 15px;
-    }
-    .product-card {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 12px;
-      border-radius: 10px;
-      transition: transform 0.3s ease, background-color 0.3s ease;
-    }
-    .product-card:hover {
-      transform: scale(1.01);
-      background-color: rgba(255, 255, 255, 0.15);
-    }
-    .product-name {
-      font-size: 1.1em;
-      margin-bottom: 4px;
-      color: #ffffff;
-    }
-    .product-description {
-      font-size: 0.85em;
-      margin-bottom: 6px;
-      color: #dddddd;
-    }
-    .product-price {
-      font-size: 1em;
-      font-weight: bold;
-      color: #f0c040;
+      gap: 15px;
     }
     .btn {
-      display: inline-block;
-      padding: 10px 20px;
       background-color: #1E3A8A;
-      color: #fff;
+      color: white;
+      padding: 14px;
+      border-radius: 30px;
       text-decoration: none;
-      border-radius: 25px;
-      transition: background-color 0.3s ease;
+      font-size: 1.1em;
+      transition: 0.3s;
     }
     .btn:hover {
       background-color: #4F6FF5;
+      transform: translateY(-2px);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🍺 Birre</h1>
-    <div class="product-list">
-      <div class="product-card"><h2 class="product-name">Ichnusa</h2><p class="product-description">Lager sarda non filtrata.</p><span class="product-price">€5.00</span></div>
-      <div class="product-card"><h2 class="product-name">Peroni</h2><p class="product-description">Birra italiana classica.</p><span class="product-price">€4.50</span></div>
-      <div class="product-card"><h2 class="product-name">Heineken</h2><p class="product-description">Premium olandese.</p><span class="product-price">€5.00</span></div>
-      <div class="product-card"><h2 class="product-name">Moretti</h2><p class="product-description">Tradizione italiana.</p><span class="product-price">€5.00</span></div>
-      <div class="product-card"><h2 class="product-name">Nastro Azzurro</h2><p class="product-description">Pilsner dal gusto deciso.</p><span class="product-price">€5.00</span></div>
-      <div class="product-card"><h2 class="product-name">Corona</h2><p class="product-description">Messicana con fetta di lime.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Tennent's</h2><p class="product-description">Strong lager scozzese.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Beck's</h2><p class="product-description">Lager tedesca.</p><span class="product-price">€5.00</span></div>
-      <div class="product-card"><h2 class="product-name">Bud</h2><p class="product-description">Americana leggera.</p><span class="product-price">€5.00</span></div>
-      <div class="product-card"><h2 class="product-name">Ceres</h2><p class="product-description">Strong ale danese.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Leffe Blonde</h2><p class="product-description">Belgian ale.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Guinness</h2><p class="product-description">Stout irlandese.</p><span class="product-price">€6.50</span></div>
-      <div class="product-card"><h2 class="product-name">Poretti 4 Luppoli</h2><p class="product-description">Bionda equilibrata.</p><span class="product-price">€5.00</span></div>
-      <div class="product-card"><h2 class="product-name">Poretti 7 Luppoli</h2><p class="product-description">Ambrata speciale.</p><span class="product-price">€5.50</span></div>
-      <div class="product-card"><h2 class="product-name">Krombacher</h2><p class="product-description">Pils tedesca.</p><span class="product-price">€5.50</span></div>
-      <div class="product-card"><h2 class="product-name">Paulaner</h2><p class="product-description">Weissbier bavarese.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Warsteiner</h2><p class="product-description">Pura tradizione tedesca.</p><span class="product-price">€5.50</span></div>
-      <div class="product-card"><h2 class="product-name">Menabrea</h2><p class="product-description">Birra premium piemontese.</p><span class="product-price">€5.00</span></div>
-      <div class="product-card"><h2 class="product-name">Artigianale Bionda</h2><p class="product-description">Birra locale non filtrata.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Artigianale Ambrata</h2><p class="product-description">Carattere intenso e luppolato.</p><span class="product-price">€6.00</span></div>
+    <h1>🍺 Seleziona tipo di Birra</h1>
+    <div class="btn-group">
+      <a href="birre-spina-it.html" class="btn">Birre alla Spina</a>
+      <a href="birre-bottiglia-it.html" class="btn">Birre in Bottiglia</a>
+      <a href="menu-it.html" class="btn" style="background:#ccc; color:#000;">← Torna al Menu</a>
     </div>
-    <a href="menu-it.html" class="btn">← Torna alle categorie</a>
   </div>
 </body>
 </html>
+
