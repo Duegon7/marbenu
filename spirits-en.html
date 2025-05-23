@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spirits</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -10,7 +10,7 @@
       font-family: 'Segoe UI', sans-serif;
       background: url('https://i.imgur.com/Z8qq1aA.jpeg') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
+      color: white;
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -18,93 +18,44 @@
       padding: 20px;
     }
     .container {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 25px;
-      border-radius: 15px;
-      max-width: 500px;
-      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 20px;
       text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-      overflow-y: auto;
-      max-height: 90vh;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     }
     h1 {
       font-size: 1.8em;
-      margin-bottom: 15px;
-      color: #f0c040;
-    }
-    .product-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: 15px;
-    }
-    .product-card {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 12px;
-      border-radius: 10px;
-      transition: transform 0.3s ease, background-color 0.3s ease;
-    }
-    .product-card:hover {
-      transform: scale(1.01);
-      background-color: rgba(255, 255, 255, 0.15);
-    }
-    .product-name {
-      font-size: 1.1em;
-      margin-bottom: 4px;
-      color: #ffffff;
-    }
-    .product-description {
-      font-size: 0.85em;
-      margin-bottom: 6px;
-      color: #dddddd;
-    }
-    .product-price {
-      font-size: 1em;
-      font-weight: bold;
+      margin-bottom: 25px;
       color: #f0c040;
     }
     .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #1E3A8A;
-      color: #fff;
+      display: block;
+      background: #1E3A8A;
+      color: white;
+      padding: 14px;
+      border-radius: 30px;
       text-decoration: none;
-      border-radius: 25px;
-      transition: background-color 0.3s ease;
+      margin: 10px auto;
+      font-size: 1.2em;
+      transition: 0.3s;
     }
     .btn:hover {
-      background-color: #4F6FF5;
+      background: #4F6FF5;
+      transform: translateY(-2px);
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>🥃 Spirits</h1>
-    <div class="product-list">
-      <!-- Lista dei 20 prodotti già inviata -->
-      <div class="product-card"><h2 class="product-name">Jack Daniel's</h2><p class="product-description">Classic Tennessee whiskey.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Jameson</h2><p class="product-description">Smooth Irish whiskey.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Chivas Regal</h2><p class="product-description">Blended Scotch whisky.</p><span class="product-price">€7.00</span></div>
-      <div class="product-card"><h2 class="product-name">Bacardi</h2><p class="product-description">White Caribbean rum.</p><span class="product-price">€6.00</span></div>
-      <div class="product-card"><h2 class="product-name">Havana Club</h2><p class="product-description">Classic Cuban rum.</p><span class="product-price">€6.50</span></div>
-      <div class="product-card"><h2 class="product-name">Zacapa</h2><p class="product-description">Aged Guatemalan rum.</p><span class="product-price">€8.00</span></div>
-      <div class="product-card"><h2 class="product-name">Bombay Sapphire</h2><p class="product-description">Premium aromatic gin.</p><span class="product-price">€6.50</span></div>
-      <div class="product-card"><h2 class="product-name">Tanqueray</h2><p class="product-description">Classic London dry gin.</p><span class="product-price">€6.50</span></div>
-      <div class="product-card"><h2 class="product-name">Gin Mare</h2><p class="product-description">Mediterranean-style gin.</p><span class="product-price">€7.00</span></div>
-      <div class="product-card"><h2 class="product-name">Amaro Montenegro</h2><p class="product-description">Italian herbal liqueur.</p><span class="product-price">€4.50</span></div>
-      <div class="product-card"><h2 class="product-name">Amaro del Capo</h2><p class="product-description">Served chilled, herbal bitter.</p><span class="product-price">€4.50</span></div>
-      <div class="product-card"><h2 class="product-name">Fernet-Branca</h2><p class="product-description">Strong herbal digestif.</p><span class="product-price">€4.50</span></div>
-      <div class="product-card"><h2 class="product-name">White Grappa</h2><p class="product-description">Dry Italian pomace brandy.</p><span class="product-price">€5.00</span></div>
-      <div class="product-card"><h2 class="product-name">Aged Grappa</h2><p class="product-description">Aromatic amber spirit.</p><span class="product-price">€5.50</span></div>
-      <div class="product-card"><h2 class="product-name">Sambuca</h2><p class="product-description">Sweet anise-flavored liqueur.</p><span class="product-price">€4.00</span></div>
-      <div class="product-card"><h2 class="product-name">Limoncello</h2><p class="product-description">Southern lemon liqueur.</p><span class="product-price">€4.00</span></div>
-      <div class="product-card"><h2 class="product-name">Liquorice Liqueur</h2><p class="product-description">Black digestive drink.</p><span class="product-price">€4.00</span></div>
-      <div class="product-card"><h2 class="product-name">Vecchia Romagna</h2><p class="product-description">Aged Italian brandy.</p><span class="product-price">€5.00</span></div>
-      <div class="product-card"><h2 class="product-name">Baileys</h2><p class="product-description">Irish cream liqueur.</p><span class="product-price">€5.00</span></div>
-      <div class="product-card"><h2 class="product-name">Cointreau</h2><p class="product-description">Dry orange liqueur.</p><span class="product-price">€5.50</span></div>
-    </div>
-    <a href="menu-en.html" class="btn">← Back to categories</a>
+    <a href="whisky-en.html" class="btn">Whisky</a>
+    <a href="rum-en.html" class="btn">Rum</a>
+    <a href="gin-en.html" class="btn">Gin</a>
+    <a href="amari-digestivi-en.html" class="btn">Liqueurs & Digestifs</a>
+    <a href="menu-en.html" class="btn" style="background: #ccc; color: #000;">← Back to Menu</a>
   </div>
 </body>
 </html>
