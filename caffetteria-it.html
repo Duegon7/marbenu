@@ -25,85 +25,43 @@
       width: 100%;
       text-align: center;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-      overflow-y: auto;
-      max-height: 90vh;
     }
     h1 {
       font-size: 1.8em;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       color: #f0c040;
     }
-    .product-list {
+    .btn-group {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      margin-bottom: 15px;
-    }
-    .product-card {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 12px;
-      border-radius: 10px;
-      transition: transform 0.3s ease, background-color 0.3s ease;
-    }
-    .product-card:hover {
-      transform: scale(1.01);
-      background-color: rgba(255, 255, 255, 0.15);
-    }
-    .product-name {
-      font-size: 1.1em;
-      margin-bottom: 4px;
-      color: #ffffff;
-    }
-    .product-description {
-      font-size: 0.85em;
-      margin-bottom: 6px;
-      color: #dddddd;
-    }
-    .product-price {
-      font-size: 1em;
-      font-weight: bold;
-      color: #f0c040;
+      gap: 15px;
     }
     .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #1E3A8A;
-      color: #fff;
+      display: block;
+      background: #1E3A8A;
+      color: white;
+      padding: 14px;
+      border-radius: 30px;
       text-decoration: none;
-      border-radius: 25px;
-      transition: background-color 0.3s ease;
+      font-size: 1.1em;
+      transition: 0.3s;
     }
     .btn:hover {
-      background-color: #4F6FF5;
+      background: #4F6FF5;
+      transform: translateY(-2px);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>☕ Caffetteria</h1>
-    <div class="product-list">
-      <div class="product-card"><h2 class="product-name">Espresso</h2><p class="product-description">Caffè ristretto intenso.</p><span class="product-price">€1.00</span></div>
-      <div class="product-card"><h2 class="product-name">Cappuccino</h2><p class="product-description">Caffè con latte montato.</p><span class="product-price">€1.50</span></div>
-      <div class="product-card"><h2 class="product-name">Caffè Macchiato</h2><p class="product-description">Espresso con una goccia di latte.</p><span class="product-price">€1.20</span></div>
-      <div class="product-card"><h2 class="product-name">Caffè Americano</h2><p class="product-description">Espresso allungato.</p><span class="product-price">€1.50</span></div>
-      <div class="product-card"><h2 class="product-name">Latte Macchiato</h2><p class="product-description">Latte caldo con caffè.</p><span class="product-price">€1.80</span></div>
-      <div class="product-card"><h2 class="product-name">Caffè Ginseng</h2><p class="product-description">Aromatizzato al ginseng.</p><span class="product-price">€1.50</span></div>
-      <div class="product-card"><h2 class="product-name">Caffè d'Orzo</h2><p class="product-description">Caffè alternativo all'orzo.</p><span class="product-price">€1.20</span></div>
-      <div class="product-card"><h2 class="product-name">Caffè Corretto</h2><p class="product-description">Espresso con liquore.</p><span class="product-price">€1.80</span></div>
-      <div class="product-card"><h2 class="product-name">Caffè Freddo</h2><p class="product-description">Espresso shakerato con ghiaccio.</p><span class="product-price">€1.50</span></div>
-      <div class="product-card"><h2 class="product-name">Tè Caldo</h2><p class="product-description">Tè nero o verde.</p><span class="product-price">€1.50</span></div>
-      <div class="product-card"><h2 class="product-name">Cioccolata Calda</h2><p class="product-description">Densa e cremosa.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Latte Caldo</h2><p class="product-description">Tazza di latte semplice.</p><span class="product-price">€1.00</span></div>
-      <div class="product-card"><h2 class="product-name">Spremuta d'Arancia</h2><p class="product-description">Succo fresco d'arancia.</p><span class="product-price">€3.00</span></div>
-      <div class="product-card"><h2 class="product-name">Cornetto Vuoto</h2><p class="product-description">Cornetto semplice.</p><span class="product-price">€1.20</span></div>
-      <div class="product-card"><h2 class="product-name">Cornetto Crema</h2><p class="product-description">Con farcitura alla crema.</p><span class="product-price">€1.50</span></div>
-      <div class="product-card"><h2 class="product-name">Cornetto Cioccolato</h2><p class="product-description">Ripieno al cioccolato.</p><span class="product-price">€1.50</span></div>
-      <div class="product-card"><h2 class="product-name">Cornetto Marmellata</h2><p class="product-description">Con marmellata di albicocche.</p><span class="product-price">€1.50</span></div>
-      <div class="product-card"><h2 class="product-name">Cornetto Integrale</h2><p class="product-description">Con miele o vuoto.</p><span class="product-price">€1.50</span></div>
-      <div class="product-card"><h2 class="product-name">Yogurt</h2><p class="product-description">Al naturale o alla frutta.</p><span class="product-price">€2.00</span></div>
-      <div class="product-card"><h2 class="product-name">Succo alla Frutta</h2><p class="product-description">Pesca, pera, albicocca...</p><span class="product-price">€2.00</span></div>
+    <h1>☕ Seleziona una sottocategoria</h1>
+    <div class="btn-group">
+      <a href="caffe-it.html" class="btn">Caffè</a>
+      <a href="cappuccini-it.html" class="btn">Cappuccini & Latte</a>
+      <a href="pasticceria-it.html" class="btn">Pasticceria</a>
+      <a href="succhi-it.html" class="btn">Succhi di Frutta</a>
+      <a href="menu-it.html" class="btn" style="background:#ccc; color:#000;">← Torna al Menu</a>
     </div>
-    <a href="menu-it.html" class="btn">← Torna alle categorie</a>
   </div>
 </body>
 </html>
