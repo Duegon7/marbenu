@@ -83,7 +83,7 @@
     <a href="https://www.facebook.com/captainscorner.marinadistabia" style="color:#ffcc00;">Facebook</a>
   </p>
 </div>
-<!-- MODAL DISCLAIMER (ENGLISH, with sessionStorage) -->
+<!-- MODAL DISCLAIMER (ITALIANO, con sessionStorage) -->
 <div id="disclaimerModal" style="
   position: fixed;
   top: 0;
@@ -106,7 +106,7 @@
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
   ">
     <p style="font-size: 0.95em; color: #ffcc00;">
-    ⚠️ Si ricorda che ai tavoli della zona bar è possibile consumare esclusivamente prodotti legati all’aperitivo.<br><br>
+      ⚠️ Si ricorda che ai tavoli della zona bar è possibile consumare esclusivamente prodotti legati all’aperitivo.<br><br>
       Per altri tipi di consumazione, vi invitiamo gentilmente ad accomodarvi nell’area ristorante.
     </p>
     <button onclick="document.getElementById('disclaimerModal').style.display='none'" style="
@@ -125,12 +125,13 @@
 <script>
   // Mostra solo se non già mostrato in questa sessione
   window.onload = function() {
-    if (!sessionStorage.getItem('disclaimerShown')) {
+    if (!sessionStorage.getItem('disclaimerShownIT')) {
       document.getElementById('disclaimerModal').style.display = 'flex';
-      sessionStorage.setItem('disclaimerShown', 'true');
+      sessionStorage.setItem('disclaimerShownIT', 'true');
     }
   };
 </script>
+
 
 </body>
 
