@@ -4,53 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gin</title>
-  <style>
+    <style>
+    /* Stile coerente */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: url('https://i.imgur.com/Z8qq1aA.jpeg') no-repeat center center fixed;
       background-size: cover;
-      color: white;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       padding: 20px;
     }
     .container {
-      background: rgba(0,0,0,0.7);
-      border-radius: 16px;
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
-    }
-    h1 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 500px;
+      width: 100%;
       text-align: center;
-      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      overflow-y: auto;
+      max-height: 90vh;
     }
-    .product {
-      margin-bottom: 18px;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
-      padding-bottom: 10px;
-    }
-    .product h2 {
-      margin: 0;
-      font-size: 1.2em;
-    }
-    .product p {
-      margin: 5px 0;
-      color: #ccc;
-    }
-    .price {
-      color: #ffd700;
-      font-weight: bold;
-    }
-    .back {
-      display: block;
-      margin-top: 20px;
-      text-align: center;
-      background: #ccc;
-      color: #000;
-      padding: 10px;
+    h1 { font-size: 1.8em; margin-bottom: 15px; color: #f0c040; }
+    .product-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px; }
+    .product-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 12px;
       border-radius: 10px;
+      transition: 0.3s;
+    }
+    .product-card:hover { transform: scale(1.01); background-color: rgba(255,255,255,0.15); }
+    .product-name { font-size: 1.1em; color: #fff; }
+    .product-description { font-size: 0.85em; color: #ddd; }
+    .product-price { color: #f0c040; font-weight: bold; }
+    .btn {
+      padding: 10px 20px;
+      background: #1E3A8A;
+      color: #fff;
+      border-radius: 25px;
       text-decoration: none;
     }
+    .btn:hover { background: #4F6FF5; }
   </style>
 </head>
 <body>
